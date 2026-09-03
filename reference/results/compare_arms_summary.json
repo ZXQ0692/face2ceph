@@ -1,0 +1,502 @@
+{
+ "arms": [
+  "c1",
+  "c2",
+  "c3",
+  "c4b",
+  "silhouette_only",
+  "stronger_backbone",
+  "profile_only",
+  "frontal_only"
+ ],
+ "rows": [
+  {
+   "arm": "c1",
+   "desc": "two-stream images with concatenated metadata (reference arm)",
+   "arch": {
+    "use_profile_silhouette": false,
+    "use_film": false,
+    "use_regression": false,
+    "heteroscedastic": false,
+    "use_grl": false,
+    "n_aux": 0
+   },
+   "criterion": "bal_mean",
+   "cls": {
+    "bal_sag": [
+     0.7671522537867228,
+     0.005899916520341974
+    ],
+    "bal_vert": [
+     0.7353691577911377,
+     0.005028100836107307
+    ],
+    "mae": [
+     null,
+     null
+    ],
+    "epoch": 9.8,
+    "n_folds": 5
+   },
+   "reg": {
+    "bal_sag": [
+     0.7671522537867228,
+     0.005899916520341974
+    ],
+    "bal_vert": [
+     0.7353691577911377,
+     0.005028100836107307
+    ],
+    "mae": [
+     null,
+     null
+    ],
+    "epoch": 9.8,
+    "n_folds": 5
+   },
+   "cls_oracle": {
+    "bal_sag": [
+     0.7671522537867228,
+     0.005899916520341974
+    ],
+    "bal_vert": [
+     0.7353691577911377,
+     0.005028100836107307
+    ],
+    "mae": [
+     null,
+     null
+    ],
+    "epoch": 9.8,
+    "n_folds": 5
+   }
+  },
+  {
+   "arm": "c2",
+   "desc": "C1 plus the profile silhouette channel",
+   "arch": {
+    "use_profile_silhouette": true,
+    "use_film": false,
+    "use_regression": false,
+    "heteroscedastic": false,
+    "use_grl": false,
+    "n_aux": 0
+   },
+   "criterion": "bal_mean",
+   "cls": {
+    "bal_sag": [
+     0.7616135160128276,
+     0.009175142782397287
+    ],
+    "bal_vert": [
+     0.7421160181363424,
+     0.004659045371977234
+    ],
+    "mae": [
+     null,
+     null
+    ],
+    "epoch": 8.8,
+    "n_folds": 5
+   },
+   "reg": {
+    "bal_sag": [
+     0.7616135160128276,
+     0.009175142782397287
+    ],
+    "bal_vert": [
+     0.7421160181363424,
+     0.004659045371977234
+    ],
+    "mae": [
+     null,
+     null
+    ],
+    "epoch": 8.8,
+    "n_folds": 5
+   },
+   "cls_oracle": {
+    "bal_sag": [
+     0.7616135160128276,
+     0.009175142782397287
+    ],
+    "bal_vert": [
+     0.7421160181363424,
+     0.004659045371977234
+    ],
+    "mae": [
+     null,
+     null
+    ],
+    "epoch": 8.8,
+    "n_folds": 5
+   }
+  },
+  {
+   "arm": "c3",
+   "desc": "C2 plus FiLM conditioning and the eight-target regression head",
+   "arch": {
+    "use_profile_silhouette": true,
+    "use_film": true,
+    "use_regression": true,
+    "heteroscedastic": false,
+    "use_grl": false,
+    "n_aux": 0
+   },
+   "criterion": "mae_mean",
+   "cls": {
+    "bal_sag": [
+     0.7600969036420187,
+     0.004039196502080487
+    ],
+    "bal_vert": [
+     0.6759389917055765,
+     0.01391416630589886
+    ],
+    "mae": [
+     1.9327893464903698,
+     0.010729945866615208
+    ],
+    "epoch": 21.6,
+    "n_folds": 5
+   },
+   "reg": {
+    "bal_sag": [
+     0.7600969036420187,
+     0.004039196502080487
+    ],
+    "bal_vert": [
+     0.6759389917055765,
+     0.01391416630589886
+    ],
+    "mae": [
+     1.9327893464903698,
+     0.010729945866615208
+    ],
+    "epoch": 21.6,
+    "n_folds": 5
+   },
+   "cls_oracle": {
+    "bal_sag": [
+     0.7689497431119283,
+     0.01112922674329288
+    ],
+    "bal_vert": [
+     0.7546971321105957,
+     0.008222048359989156
+    ],
+    "mae": [
+     2.0733573503066696,
+     0.06559842933494436
+    ],
+    "epoch": 8.6,
+    "n_folds": 5
+   }
+  },
+  {
+   "arm": "c4b",
+   "desc": "",
+   "arch": {
+    "use_profile_silhouette": true,
+    "use_film": true,
+    "use_regression": true,
+    "heteroscedastic": true,
+    "use_grl": false,
+    "n_aux": 0
+   },
+   "criterion": "mae_mean",
+   "cls": {
+    "bal_sag": [
+     0.7579640467961629,
+     0.0055011391545090466
+    ],
+    "bal_vert": [
+     0.6705898205439249,
+     0.010883973973763719
+    ],
+    "mae": [
+     1.90978001880864,
+     0.012088785216911015
+    ],
+    "epoch": 27.2,
+    "n_folds": 5
+   },
+   "reg": {
+    "bal_sag": [
+     0.7579640467961629,
+     0.0055011391545090466
+    ],
+    "bal_vert": [
+     0.6705898205439249,
+     0.010883973973763719
+    ],
+    "mae": [
+     1.90978001880864,
+     0.012088785216911015
+    ],
+    "epoch": 27.2,
+    "n_folds": 5
+   },
+   "cls_oracle": {
+    "bal_sag": [
+     0.7766610105832418,
+     0.007141369578277136
+    ],
+    "bal_vert": [
+     0.7569349606831868,
+     0.009926209985981501
+    ],
+    "mae": [
+     2.033704223342286,
+     0.03675551545634277
+    ],
+    "epoch": 6.8,
+    "n_folds": 5
+   }
+  },
+  {
+   "arm": "silhouette_only",
+   "desc": "",
+   "arch": {
+    "use_profile_silhouette": true,
+    "use_film": true,
+    "use_regression": true,
+    "heteroscedastic": true,
+    "use_grl": false,
+    "n_aux": 0
+   },
+   "criterion": "mae_mean",
+   "cls": {
+    "bal_sag": [
+     0.7510393102963764,
+     0.007783091686944079
+    ],
+    "bal_vert": [
+     0.6616042693456013,
+     0.01779631085366391
+    ],
+    "mae": [
+     2.4237564010578994,
+     0.017525212770450587
+    ],
+    "epoch": 14.8,
+    "n_folds": 5
+   },
+   "reg": {
+    "bal_sag": [
+     0.7510393102963764,
+     0.007783091686944079
+    ],
+    "bal_vert": [
+     0.6616042693456013,
+     0.01779631085366391
+    ],
+    "mae": [
+     2.4237564010578994,
+     0.017525212770450587
+    ],
+    "epoch": 14.8,
+    "n_folds": 5
+   },
+   "cls_oracle": {
+    "bal_sag": [
+     0.7535207192103068,
+     0.007953384818600357
+    ],
+    "bal_vert": [
+     0.6707262794176738,
+     0.013790245066685247
+    ],
+    "mae": [
+     2.4489030022553444,
+     0.016568053659912478
+    ],
+    "epoch": 11.0,
+    "n_folds": 5
+   }
+  },
+  {
+   "arm": "stronger_backbone",
+   "desc": "",
+   "arch": {
+    "use_profile_silhouette": true,
+    "use_film": true,
+    "use_regression": true,
+    "heteroscedastic": true,
+    "use_grl": false,
+    "n_aux": 0
+   },
+   "criterion": "mae_mean",
+   "cls": {
+    "bal_sag": [
+     0.7606395443280538,
+     0.005878602676222946
+    ],
+    "bal_vert": [
+     0.6725501437981923,
+     0.015676541555416278
+    ],
+    "mae": [
+     1.9376754141172001,
+     0.01069455151061099
+    ],
+    "epoch": 22.2,
+    "n_folds": 5
+   },
+   "reg": {
+    "bal_sag": [
+     0.7606395443280538,
+     0.005878602676222946
+    ],
+    "bal_vert": [
+     0.6725501437981923,
+     0.015676541555416278
+    ],
+    "mae": [
+     1.9376754141172001,
+     0.01069455151061099
+    ],
+    "epoch": 22.2,
+    "n_folds": 5
+   },
+   "cls_oracle": {
+    "bal_sag": [
+     0.7768362283706666,
+     0.004737991675654589
+    ],
+    "bal_vert": [
+     0.7520613312721253,
+     0.008746253079489978
+    ],
+    "mae": [
+     2.01637204270465,
+     0.05790963845274303
+    ],
+    "epoch": 8.0,
+    "n_folds": 5
+   }
+  },
+  {
+   "arm": "profile_only",
+   "desc": "",
+   "arch": {
+    "use_profile_silhouette": true,
+    "use_film": true,
+    "use_regression": true,
+    "heteroscedastic": true,
+    "use_grl": false,
+    "n_aux": 0
+   },
+   "criterion": "mae_mean",
+   "cls": {
+    "bal_sag": [
+     0.7604129393895467,
+     0.012711024203308174
+    ],
+    "bal_vert": [
+     0.6783830960591634,
+     0.02680855401958825
+    ],
+    "mae": [
+     2.0251750069602523,
+     0.015613054959032587
+    ],
+    "epoch": 19.2,
+    "n_folds": 5
+   },
+   "reg": {
+    "bal_sag": [
+     0.7604129393895467,
+     0.012711024203308174
+    ],
+    "bal_vert": [
+     0.6783830960591634,
+     0.02680855401958825
+    ],
+    "mae": [
+     2.0251750069602523,
+     0.015613054959032587
+    ],
+    "epoch": 19.2,
+    "n_folds": 5
+   },
+   "cls_oracle": {
+    "bal_sag": [
+     0.7703498880068461,
+     0.0068139157430786
+    ],
+    "bal_vert": [
+     0.7518137296040852,
+     0.007816750950937226
+    ],
+    "mae": [
+     2.1208528213512006,
+     0.05022594621632985
+    ],
+    "epoch": 7.2,
+    "n_folds": 5
+   }
+  },
+  {
+   "arm": "frontal_only",
+   "desc": "",
+   "arch": {
+    "use_profile_silhouette": true,
+    "use_film": true,
+    "use_regression": true,
+    "heteroscedastic": true,
+    "use_grl": false,
+    "n_aux": 0
+   },
+   "criterion": "mae_mean",
+   "cls": {
+    "bal_sag": [
+     0.6905568917592366,
+     0.00557833503154451
+    ],
+    "bal_vert": [
+     0.6485313336054485,
+     0.01375888466717369
+    ],
+    "mae": [
+     2.1449157314675795,
+     0.008148163778716872
+    ],
+    "epoch": 23.0,
+    "n_folds": 5
+   },
+   "reg": {
+    "bal_sag": [
+     0.6905568917592366,
+     0.00557833503154451
+    ],
+    "bal_vert": [
+     0.6485313336054485,
+     0.01375888466717369
+    ],
+    "mae": [
+     2.1449157314675795,
+     0.008148163778716872
+    ],
+    "epoch": 23.0,
+    "n_folds": 5
+   },
+   "cls_oracle": {
+    "bal_sag": [
+     0.7136940399805705,
+     0.00826386394689385
+    ],
+    "bal_vert": [
+     0.7276169021924337,
+     0.01290423345004607
+    ],
+    "mae": [
+     2.1972904999472385,
+     0.028043430909832787
+    ],
+    "epoch": 9.6,
+    "n_folds": 5
+   }
+  }
+ ]
+}

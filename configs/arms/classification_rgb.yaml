@@ -1,0 +1,6 @@
+name: classification_rgb
+model:
+  use_profile_sdf: false
+  metadata_conditioning: concatenate
+  regression: none
+

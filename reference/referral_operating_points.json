@@ -1,0 +1,191 @@
+{
+ "config": "c4b",
+ "split": "calibration",
+ "n": 1388,
+ "rule": "score = max(pct_rank(1 - confidence), pct_rank(discordance)); a case is referred when score exceeds the threshold",
+ "operating_points": {
+  "sagittal": {
+   "0.05": 0.9740634005763689,
+   "0.1": 0.9488472622478387,
+   "0.15": 0.9229106628242075,
+   "0.2": 0.8966858789625362,
+   "0.25": 0.8659942363112392,
+   "0.3": 0.8371037463976946,
+   "0.4": 0.7731988472622477
+  },
+  "vertical": {
+   "0.05": 0.9752521613832852,
+   "0.1": 0.9490634005763688,
+   "0.15": 0.9221541786743516,
+   "0.2": 0.8952449567723344,
+   "0.25": 0.8674351585014409,
+   "0.3": 0.8392651296829972,
+   "0.4": 0.776657060518732
+  }
+ },
+ "signal_complementarity": {
+  "sagittal": {
+   "signal1_rate": 0.20028818443804033,
+   "signal2_rate": 0.20028818443804033,
+   "both": 0.04178674351585014,
+   "either": 0.35878962536023057,
+   "jaccard": 0.11646586345381527
+  },
+  "vertical": {
+   "signal1_rate": 0.20028818443804033,
+   "signal2_rate": 0.20028818443804033,
+   "both": 0.03818443804034582,
+   "either": 0.36239193083573484,
+   "jaccard": 0.10536779324055666
+  }
+ },
+ "abstention_curves": {
+  "sagittal": [
+   {
+    "referral_rate": 0.0,
+    "n_referred": 0,
+    "n_kept": 1388,
+    "accuracy_kept": 0.7860230547550432
+   },
+   {
+    "referral_rate": 0.05,
+    "n_referred": 69,
+    "n_kept": 1319,
+    "accuracy_kept": 0.7884761182714177
+   },
+   {
+    "referral_rate": 0.1,
+    "n_referred": 139,
+    "n_kept": 1249,
+    "accuracy_kept": 0.7950360288230585
+   },
+   {
+    "referral_rate": 0.15,
+    "n_referred": 208,
+    "n_kept": 1180,
+    "accuracy_kept": 0.7991525423728814
+   },
+   {
+    "referral_rate": 0.2,
+    "n_referred": 278,
+    "n_kept": 1110,
+    "accuracy_kept": 0.8036036036036036
+   },
+   {
+    "referral_rate": 0.25,
+    "n_referred": 347,
+    "n_kept": 1041,
+    "accuracy_kept": 0.808837656099904
+   },
+   {
+    "referral_rate": 0.3,
+    "n_referred": 416,
+    "n_kept": 972,
+    "accuracy_kept": 0.8117283950617284
+   },
+   {
+    "referral_rate": 0.35,
+    "n_referred": 486,
+    "n_kept": 902,
+    "accuracy_kept": 0.8192904656319291
+   },
+   {
+    "referral_rate": 0.4,
+    "n_referred": 555,
+    "n_kept": 833,
+    "accuracy_kept": 0.8199279711884754
+   },
+   {
+    "referral_rate": 0.45,
+    "n_referred": 625,
+    "n_kept": 763,
+    "accuracy_kept": 0.8256880733944955
+   },
+   {
+    "referral_rate": 0.5,
+    "n_referred": 694,
+    "n_kept": 694,
+    "accuracy_kept": 0.8357348703170029
+   }
+  ],
+  "vertical": [
+   {
+    "referral_rate": 0.0,
+    "n_referred": 0,
+    "n_kept": 1388,
+    "accuracy_kept": 0.8177233429394812
+   },
+   {
+    "referral_rate": 0.05,
+    "n_referred": 69,
+    "n_kept": 1319,
+    "accuracy_kept": 0.8278999241849886
+   },
+   {
+    "referral_rate": 0.1,
+    "n_referred": 139,
+    "n_kept": 1249,
+    "accuracy_kept": 0.8374699759807847
+   },
+   {
+    "referral_rate": 0.15,
+    "n_referred": 208,
+    "n_kept": 1180,
+    "accuracy_kept": 0.85
+   },
+   {
+    "referral_rate": 0.2,
+    "n_referred": 278,
+    "n_kept": 1110,
+    "accuracy_kept": 0.8558558558558559
+   },
+   {
+    "referral_rate": 0.25,
+    "n_referred": 347,
+    "n_kept": 1041,
+    "accuracy_kept": 0.8635926993275697
+   },
+   {
+    "referral_rate": 0.3,
+    "n_referred": 416,
+    "n_kept": 972,
+    "accuracy_kept": 0.8734567901234568
+   },
+   {
+    "referral_rate": 0.35,
+    "n_referred": 486,
+    "n_kept": 902,
+    "accuracy_kept": 0.8869179600886918
+   },
+   {
+    "referral_rate": 0.4,
+    "n_referred": 555,
+    "n_kept": 833,
+    "accuracy_kept": 0.8895558223289316
+   },
+   {
+    "referral_rate": 0.45,
+    "n_referred": 625,
+    "n_kept": 763,
+    "accuracy_kept": 0.8977719528178244
+   },
+   {
+    "referral_rate": 0.5,
+    "n_referred": 694,
+    "n_kept": 694,
+    "accuracy_kept": 0.9020172910662824
+   }
+  ]
+ },
+ "conformal_halfwidth_reported_only": {
+  "ANB": 2.233884264547426,
+  "Wits": 3.825888572801005,
+  "SN_MP": 5.26848440142678,
+  "FMA": 4.568345712943566,
+  "PP_MP": 4.8187675618816925,
+  "Jarabak": 4.852849657864925,
+  "Y_axis": 3.294979945715682,
+  "LAFH_TAFH": 1.9257031558541589
+ },
+ "note": "thresholds are set on the calibration split only; referral behaviour on the test set is reported with the evaluation results"
+}

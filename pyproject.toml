@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=78.1"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "face2ceph"
+version = "1.0.0"
+description = "Clean final-method reimplementation for facial-photograph cephalometric prediction"
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+license = "MIT"
+authors = [
+  {name = "Xiaoqi Zhang"},
+  {name = "Lu Xing"},
+  {name = "Xiaoqian Zhang"},
+  {name = "Fan Jian"},
+  {name = "Yan Wang"},
+  {name = "Xiaolong Li"},
+  {name = "Minqi Li"},
+  {name = "Wenli Lai", email = "wenlilai@scu.edu.cn"},
+  {name = "Hu Long", email = "hlong@scu.edu.cn"},
+]
+
+[project.urls]
+Repository = "https://github.com/ZXQ0692/face2ceph"
+
+[project.scripts]
+face2ceph = "face2ceph.cli:main"
+face2ceph-reproduce = "face2ceph.reproduction:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+addopts = "-q"

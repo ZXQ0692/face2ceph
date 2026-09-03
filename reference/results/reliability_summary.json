@@ -1,0 +1,342 @@
+{
+ "ceiling_checks": {
+  "sagittal": {
+   "metric": "ANB",
+   "n": 3470,
+   "sigma_e": 0.4907,
+   "ceiling_gaussian": 0.9222,
+   "ceiling_empirical_error": 0.9224,
+   "ceiling_gap_pp": 0.026,
+   "sigma_e_by_distance_band": [
+    {
+     "lo": 0.0,
+     "hi": 0.5,
+     "n": 675,
+     "sigma_e": 0.4761
+    },
+    {
+     "lo": 0.5,
+     "hi": 1.0,
+     "n": 671,
+     "sigma_e": 0.4924
+    },
+    {
+     "lo": 1.0,
+     "hi": 2.0,
+     "n": 1348,
+     "sigma_e": 0.4963
+    },
+    {
+     "lo": 2.0,
+     "hi": 4.0,
+     "n": 570,
+     "sigma_e": 0.4932
+    },
+    {
+     "lo": 4.0,
+     "hi": null,
+     "n": 206,
+     "sigma_e": 0.4896
+    }
+   ],
+   "sigma_e_band_range": [
+    0.4761,
+    0.4963
+   ],
+   "two_tracing_class_agreement": 0.8968
+  },
+  "vertical": {
+   "metric": "SN_MP",
+   "n": 3470,
+   "sigma_e": 1.1277,
+   "ceiling_gaussian": 0.9334,
+   "ceiling_empirical_error": 0.9338,
+   "ceiling_gap_pp": 0.045,
+   "sigma_e_by_distance_band": [
+    {
+     "lo": 0.0,
+     "hi": 0.5,
+     "n": 259,
+     "sigma_e": 1.1878
+    },
+    {
+     "lo": 0.5,
+     "hi": 1.0,
+     "n": 254,
+     "sigma_e": 1.1539
+    },
+    {
+     "lo": 1.0,
+     "hi": 2.0,
+     "n": 478,
+     "sigma_e": 1.0223
+    },
+    {
+     "lo": 2.0,
+     "hi": 4.0,
+     "n": 984,
+     "sigma_e": 1.1608
+    },
+    {
+     "lo": 4.0,
+     "hi": null,
+     "n": 1495,
+     "sigma_e": 1.1203
+    }
+   ],
+   "sigma_e_band_range": [
+    1.0223,
+    1.1878
+   ],
+   "two_tracing_class_agreement": 0.9115
+  }
+ },
+ "design": "one tracing per case across the whole cohort, by one of six orthodontists allocated in near-equal numbers; every internal-test case was traced again by a different one of the six; 100 of those were traced a third time by the operator who produced the label",
+ "icc_form": "ICC(1,1), one-way random: operators are not crossed with cases",
+ "sem_definition": "sigma_e = SD(first - second) / sqrt(2); because allocation is unrelated to the case, this is the total error of one tracing by an allocated operator",
+ "n_boot": 2000,
+ "seed": 42,
+ "n_doctors": 6,
+ "measures": {
+  "ANB": {
+   "n_inter": 3499,
+   "bias_inter": -0.009965704486996286,
+   "sd_diff_inter": 0.6952543939819522,
+   "sem_inter": 0.49161909663438197,
+   "sem_inter_ci": [
+    0.47999696440752326,
+    0.5041602080050757
+   ],
+   "icc_inter": 0.9758680786091536,
+   "icc_inter_ci": [
+    0.9739164224756982,
+    0.9776505571901065
+   ],
+   "icc_two_way_reference": 0.9758680552156196,
+   "n_intra": 100,
+   "bias_intra": -0.01039999999999998,
+   "sem_intra": 0.35432525148284844,
+   "icc_intra": 0.9902686746636596,
+   "icc_intra_ci": [
+    0.9841257946302607,
+    0.9936237441109845
+   ],
+   "stratum_offset": 0.0011725452812202043,
+   "stratum_offset_ci": [
+    -0.02816501856423939,
+    0.03214418020396255
+   ],
+   "n_cross_stratum_pairs": 2098
+  },
+  "Wits": {
+   "n_inter": 3499,
+   "bias_inter": 0.029859959988568153,
+   "sd_diff_inter": 1.5684557408211817,
+   "sem_inter": 1.1090656903256275,
+   "sem_inter_ci": [
+    1.0800679452242181,
+    1.1399303812922728
+   ],
+   "icc_inter": 0.93505000574081,
+   "icc_inter_ci": [
+    0.9298731477683887,
+    0.9398627774427868
+   ],
+   "icc_two_way_reference": 0.9350501673856666,
+   "n_intra": 100,
+   "bias_intra": 0.030000000000000016,
+   "sem_intra": 0.8758268820221993,
+   "icc_intra": 0.970164218925127,
+   "icc_intra_ci": [
+    0.9478955466074646,
+    0.9812141954809982
+   ],
+   "stratum_offset": 0.243069590085796,
+   "stratum_offset_ci": [
+    0.17698058424445515,
+    0.31073990546775065
+   ],
+   "n_cross_stratum_pairs": 2098
+  },
+  "SN_MP": {
+   "n_inter": 3499,
+   "bias_inter": -0.010568733923978247,
+   "sd_diff_inter": 1.5933238151540199,
+   "sem_inter": 1.1266500743214285,
+   "sem_inter_ci": [
+    1.0999876171454224,
+    1.1535661212002946
+   ],
+   "icc_inter": 0.9676577795743554,
+   "icc_inter_ci": [
+    0.9653483251718816,
+    0.9698227504077894
+   ],
+   "icc_two_way_reference": 0.9676576530808871,
+   "n_intra": 100,
+   "bias_intra": -0.040100000000000226,
+   "sem_intra": 0.6429905626339811,
+   "icc_intra": 0.9894020935438367,
+   "icc_intra_ci": [
+    0.9842308391632224,
+    0.9924627562406099
+   ],
+   "stratum_offset": 0.3708102955195425,
+   "stratum_offset_ci": [
+    0.30765633458292013,
+    0.4338529272695458
+   ],
+   "n_cross_stratum_pairs": 2098
+  },
+  "FMA": {
+   "n_inter": 3499,
+   "bias_inter": 0.01947127750785937,
+   "sd_diff_inter": 1.6964848737245697,
+   "sem_inter": 1.199595958391047,
+   "sem_inter_ci": [
+    1.1712385569168837,
+    1.2278794524553873
+   ],
+   "icc_inter": 0.9576591837798559,
+   "icc_inter_ci": [
+    0.9547587104961643,
+    0.9604301239949058
+   ],
+   "icc_two_way_reference": 0.9576590456588209,
+   "n_intra": 100,
+   "bias_intra": 0.019899999999999737,
+   "sem_intra": 0.6949409501838443,
+   "icc_intra": 0.9859486607922718,
+   "icc_intra_ci": [
+    0.9787967008120987,
+    0.9906873034212365
+   ],
+   "stratum_offset": 0.03627264061010489,
+   "stratum_offset_ci": [
+    -0.036013933647553946,
+    0.10974505949429679
+   ],
+   "n_cross_stratum_pairs": 2098
+  },
+  "PP_MP": {
+   "n_inter": 3499,
+   "bias_inter": -0.04059731351814805,
+   "sd_diff_inter": 1.7461486045018173,
+   "sem_inter": 1.2347135192026617,
+   "sem_inter_ci": [
+    1.2064448825887668,
+    1.263400290822086
+   ],
+   "icc_inter": 0.9451822596761051,
+   "icc_inter_ci": [
+    0.9413298803473864,
+    0.9486695985289967
+   ],
+   "icc_two_way_reference": 0.9451826423350815,
+   "n_intra": 100,
+   "bias_intra": -0.029900000000000055,
+   "sem_intra": 0.9793955541634601,
+   "icc_intra": 0.9602623473496368,
+   "icc_intra_ci": [
+    0.9405117406853543,
+    0.9719692745385142
+   ],
+   "stratum_offset": 0.28803622497616777,
+   "stratum_offset_ci": [
+    0.21758244046413316,
+    0.361403886899244
+   ],
+   "n_cross_stratum_pairs": 2098
+  },
+  "Jarabak": {
+   "n_inter": 3499,
+   "bias_inter": 0.009134038296656417,
+   "sd_diff_inter": 1.5596982485989677,
+   "sem_inter": 1.1028732081891115,
+   "sem_inter_ci": [
+    1.0754607316076283,
+    1.131044361512628
+   ],
+   "icc_inter": 0.9531294887614172,
+   "icc_inter_ci": [
+    0.9497439654238153,
+    0.956225749415764
+   ],
+   "icc_two_way_reference": 0.9531292124372088,
+   "n_intra": 100,
+   "bias_intra": 0.04020000000000096,
+   "sem_intra": 0.8329465647915116,
+   "icc_intra": 0.9722214364087406,
+   "icc_intra_ci": [
+    0.9580915883476259,
+    0.981250870136741
+   ],
+   "stratum_offset": 0.11168255481410874,
+   "stratum_offset_ci": [
+    0.047784546021696156,
+    0.17728169525800946
+   ],
+   "n_cross_stratum_pairs": 2098
+  },
+  "Y_axis": {
+   "n_inter": 3499,
+   "bias_inter": -0.019879965704487048,
+   "sd_diff_inter": 0.9908162556037656,
+   "sem_inter": 0.7006128932472862,
+   "sem_inter_ci": [
+    0.6836900733061712,
+    0.7172149530387186
+   ],
+   "icc_inter": 0.961089149493666,
+   "icc_inter_ci": [
+    0.9582396376337584,
+    0.9635767157662443
+   ],
+   "icc_two_way_reference": 0.961089237886806,
+   "n_intra": 100,
+   "bias_intra": -0.009900000000000162,
+   "sem_intra": 0.5275553444086613,
+   "icc_intra": 0.9765413278321226,
+   "icc_intra_ci": [
+    0.9674967047963976,
+    0.9824726482920065
+   ],
+   "stratum_offset": 0.11664442326024788,
+   "stratum_offset_ci": [
+    0.0765360728197361,
+    0.15691708407148158
+   ],
+   "n_cross_stratum_pairs": 2098
+  },
+  "LAFH_TAFH": {
+   "n_inter": 3499,
+   "bias_inter": 0.010105744498428102,
+   "sd_diff_inter": 0.6834623414056182,
+   "sem_inter": 0.4832808562935479,
+   "sem_inter_ci": [
+    0.4713529540371033,
+    0.49487859914710713
+   ],
+   "icc_inter": 0.9364903798499833,
+   "icc_inter_ci": [
+    0.9322153475252956,
+    0.9406815581555905
+   ],
+   "icc_two_way_reference": 0.9364902443822855,
+   "n_intra": 100,
+   "bias_intra": 0.009799999999999613,
+   "sem_intra": 0.2617655285158683,
+   "icc_intra": 0.979989951558499,
+   "icc_intra_ci": [
+    0.9710034648224525,
+    0.9859239431373209
+   ],
+   "stratum_offset": -0.05650619637750236,
+   "stratum_offset_ci": [
+    -0.08650496917634645,
+    -0.026861051888799788
+   ],
+   "n_cross_stratum_pairs": 2098
+  }
+ }
+}

@@ -1,0 +1,4 @@
+name: learning_10
+training:
+  subset_fraction: 0.10
+

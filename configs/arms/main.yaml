@@ -1,0 +1,6 @@
+name: main
+model:
+  use_profile_sdf: true
+  metadata_conditioning: film
+  regression: heteroscedastic
+

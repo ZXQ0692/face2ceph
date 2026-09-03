@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Controlled operator-experience mapping",
+  "type": "object",
+  "required": ["operator_experience"],
+  "properties": {
+    "operator_experience": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string",
+        "enum": ["5-10y", ">10y"]
+      }
+    }
+  }
+}
+

@@ -1,0 +1,4 @@
+name: learning_25
+training:
+  subset_fraction: 0.25
+

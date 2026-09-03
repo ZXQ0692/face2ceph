@@ -1,0 +1,6 @@
+name: classification_shape
+model:
+  use_profile_sdf: true
+  metadata_conditioning: concatenate
+  regression: none
+

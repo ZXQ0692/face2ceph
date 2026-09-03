@@ -1,0 +1,4 @@
+name: learning_50
+training:
+  subset_fraction: 0.50
+

@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Controlled frozen partition",
+  "type": "object",
+  "required": ["columns"],
+  "properties": {
+    "columns": {
+      "const": ["case_id", "split", "fold"]
+    }
+  }
+}

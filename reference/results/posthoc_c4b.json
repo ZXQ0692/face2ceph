@@ -1,0 +1,208 @@
+{
+ "config": "c4b",
+ "T0_1_and_T0_2": {
+  "internal_test": {
+   "sagittal": {
+    "direct": {
+     "bal": 0.7796309769400263,
+     "acc": 0.7959654178674351
+    },
+    "regression_route": {
+     "bal": 0.7726610140133601,
+     "acc": 0.7994236311239193
+    },
+    "bias_corrected": {
+     "bal": 0.7899279911799351,
+     "acc": 0.7397694524495677
+    },
+    "per_class_recall_direct": {
+     "III": 0.7866242038216561,
+     "I": 0.8360824742268042,
+     "II": 0.7161862527716186
+    },
+    "per_class_recall_biased": {
+     "III": 0.9028662420382165,
+     "I": 0.6520618556701031,
+     "II": 0.8148558758314856
+    },
+    "per_class_recall_regression": {
+     "III": 0.7579617834394905,
+     "I": 0.8582474226804123,
+     "II": 0.7017738359201774
+    },
+    "paired_vs_direct": {
+     "_definition": "paired case-level bootstrap, B = 2000, seed 42",
+     "regression_route": {
+      "bal_delta": -0.0069699629266661844,
+      "bal_delta_ci95": [
+       -0.013291599771869746,
+       -0.0003342358161968212
+      ],
+      "bal_distinguishable": true,
+      "acc_delta": 0.0034582132564842105,
+      "acc_delta_ci95": [
+       -0.0017291066282421053,
+       0.009221902017291117
+      ],
+      "acc_distinguishable": false
+     },
+     "bias_corrected": {
+      "bal_delta": 0.010297014239908808,
+      "bal_delta_ci95": [
+       -0.001930065088526428,
+       0.02262863742914011
+      ],
+      "bal_distinguishable": false,
+      "acc_delta": -0.05619596541786742,
+      "acc_delta_ci95": [
+       -0.06916426512968299,
+       -0.043515850144092205
+      ],
+      "acc_distinguishable": true
+     },
+     "_interpretation": "An interval containing zero means only that no difference was detected; it is not equivalence. Claiming equivalence would require a pre-specified equivalence margin and an equivalence test, which were not done."
+    }
+   },
+   "vertical": {
+    "direct": {
+     "bal": 0.6531453460610264,
+     "acc": 0.8060518731988473
+    },
+    "regression_route": {
+     "bal": 0.6575142245702849,
+     "acc": 0.8135446685878962
+    },
+    "bias_corrected": {
+     "bal": 0.7530430179281306,
+     "acc": 0.7406340057636888
+    },
+    "per_class_recall_direct": {
+     "Hypo": 0.40794223826714804,
+     "Normo": 0.9045833333333333,
+     "Hyper": 0.6469104665825978
+    },
+    "per_class_recall_biased": {
+     "Hypo": 0.740072202166065,
+     "Normo": 0.7220833333333333,
+     "Hyper": 0.7969735182849937
+    },
+    "per_class_recall_regression": {
+     "Hypo": 0.4296028880866426,
+     "Normo": 0.92125,
+     "Hyper": 0.6216897856242118
+    },
+    "paired_vs_direct": {
+     "_definition": "paired case-level bootstrap, B = 2000, seed 42",
+     "regression_route": {
+      "bal_delta": 0.004368878509258489,
+      "bal_delta_ci95": [
+       -0.009655058250006038,
+       0.018225416205992793
+      ],
+      "bal_distinguishable": false,
+      "acc_delta": 0.007492795389048901,
+      "acc_delta_ci95": [
+       0.0005763688760806989,
+       0.014121037463976971
+      ],
+      "acc_distinguishable": true
+     },
+     "bias_corrected": {
+      "bal_delta": 0.09989767186710419,
+      "bal_delta_ci95": [
+       0.07913390335746534,
+       0.12141559407432741
+      ],
+      "bal_distinguishable": true,
+      "acc_delta": -0.06541786743515854,
+      "acc_delta_ci95": [
+       -0.07925072046109505,
+       -0.05100864553314122
+      ],
+      "acc_distinguishable": true
+     },
+     "_interpretation": "An interval containing zero means only that no difference was detected; it is not equivalence. Claiming equivalence would require a pre-specified equivalence margin and an equivalence test, which were not done."
+    }
+   }
+  }
+ },
+ "class_bias": {
+  "sagittal": {
+   "III": 1.0,
+   "I": 0.2210037588108183,
+   "II": 0.3854221125344267
+  },
+  "vertical": {
+   "Hypo": 1.0,
+   "Normo": 0.17413409656082357,
+   "Hyper": 0.39939887853352474
+  }
+ },
+ "T0_3_icc_ceiling": {
+  "ANB": {
+   "R2": 0.7966005945571295,
+   "ICC": 0.9759,
+   "ratio": 0.8162727682724967,
+   "note": "below the measurement repeatability of this cohort, so headroom may remain",
+   "icc_is_measured": true,
+   "icc_source": "measured per case in this cohort; inter-operator ICC(1,1); CI from a case-level bootstrap, B = 2000, seed 42 (not back-derived)"
+  },
+  "Wits": {
+   "R2": 0.6845456633533413,
+   "ICC": 0.9351,
+   "ratio": 0.7320561045378476,
+   "note": "below the measurement repeatability of this cohort, so headroom may remain",
+   "icc_is_measured": true,
+   "icc_source": "measured per case in this cohort; inter-operator ICC(1,1); CI from a case-level bootstrap, B = 2000, seed 42 (not back-derived)"
+  },
+  "SN_MP": {
+   "R2": 0.7278657285566634,
+   "ICC": 0.9677,
+   "ratio": 0.7521605131307879,
+   "note": "below the measurement repeatability of this cohort, so headroom may remain",
+   "icc_is_measured": true,
+   "icc_source": "measured per case in this cohort; inter-operator ICC(1,1); CI from a case-level bootstrap, B = 2000, seed 42 (not back-derived)"
+  },
+  "FMA": {
+   "R2": 0.7651370026343991,
+   "ICC": 0.9577,
+   "ratio": 0.7989318185594645,
+   "note": "below the measurement repeatability of this cohort, so headroom may remain",
+   "icc_is_measured": true,
+   "icc_source": "measured per case in this cohort; inter-operator ICC(1,1); CI from a case-level bootstrap, B = 2000, seed 42 (not back-derived)"
+  },
+  "PP_MP": {
+   "R2": 0.6822971923370943,
+   "ICC": 0.9452,
+   "ratio": 0.7218548374281573,
+   "note": "below the measurement repeatability of this cohort, so headroom may remain",
+   "icc_is_measured": true,
+   "icc_source": "measured per case in this cohort; inter-operator ICC(1,1); CI from a case-level bootstrap, B = 2000, seed 42 (not back-derived)"
+  },
+  "Jarabak": {
+   "R2": 0.6730805753549041,
+   "ICC": 0.9531,
+   "ratio": 0.7062014220490023,
+   "note": "below the measurement repeatability of this cohort, so headroom may remain",
+   "icc_is_measured": true,
+   "icc_source": "measured per case in this cohort; inter-operator ICC(1,1); CI from a case-level bootstrap, B = 2000, seed 42 (not back-derived)"
+  },
+  "Y_axis": {
+   "R2": 0.6853872728450445,
+   "ICC": 0.9611,
+   "ratio": 0.7131279501040938,
+   "note": "below the measurement repeatability of this cohort, so headroom may remain",
+   "icc_is_measured": true,
+   "icc_source": "measured per case in this cohort; inter-operator ICC(1,1); CI from a case-level bootstrap, B = 2000, seed 42 (not back-derived)"
+  },
+  "LAFH_TAFH": {
+   "R2": 0.6572303913784301,
+   "ICC": 0.9365,
+   "ratio": 0.7017943314238442,
+   "note": "below the measurement repeatability of this cohort, so headroom may remain",
+   "icc_is_measured": true,
+   "icc_source": "measured per case in this cohort; inter-operator ICC(1,1); CI from a case-level bootstrap, B = 2000, seed 42 (not back-derived)"
+  }
+ },
+ "note": "the class bias is fitted on the calibration split and applied unchanged to the test set, with no further tuning"
+}

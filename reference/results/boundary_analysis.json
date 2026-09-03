@@ -1,0 +1,239 @@
+{
+ "split": "internal_test",
+ "axes": {
+  "sagittal": {
+   "metric": "ANB",
+   "bins": [
+    {
+     "lo": 0,
+     "hi": 0.5,
+     "n": 675,
+     "frac": 0.19452449567723343,
+     "accuracy": 0.5881481481481482,
+     "share_of_errors": 0.3926553672316384
+    },
+    {
+     "lo": 0.5,
+     "hi": 1.0,
+     "n": 671,
+     "frac": 0.19337175792507205,
+     "accuracy": 0.7198211624441133,
+     "share_of_errors": 0.2655367231638418
+    },
+    {
+     "lo": 1.0,
+     "hi": 2.0,
+     "n": 1348,
+     "frac": 0.38847262247838615,
+     "accuracy": 0.8568249258160238,
+     "share_of_errors": 0.2725988700564972
+    },
+    {
+     "lo": 2.0,
+     "hi": 4.0,
+     "n": 570,
+     "frac": 0.1642651296829971,
+     "accuracy": 0.9210526315789473,
+     "share_of_errors": 0.0635593220338983
+    },
+    {
+     "lo": 4.0,
+     "hi": null,
+     "n": 206,
+     "frac": 0.05936599423631124,
+     "accuracy": 0.9805825242718447,
+     "share_of_errors": 0.005649717514124294
+    }
+   ],
+   "icc_used": 0.9759,
+   "icc_source": "measured per case in this cohort; inter-operator ICC(1,1); CI from a case-level bootstrap, B = 2000, seed 42 (not back-derived)",
+   "icc_is_measured": true,
+   "icc_form": "ICC(1,1)",
+   "sd_measurement_error_source": "sigma_e measured per case",
+   "sd_cohort": 3.1497928998510125,
+   "sd_measurement_error": 0.4916,
+   "mean_flip_prob": 0.07797150744265874,
+   "label_noise_accuracy_ceiling": 0.9220284925573412,
+   "observed_accuracy": 0.7959654178674351
+  },
+  "vertical": {
+   "metric": "SN_MP",
+   "bins": [
+    {
+     "lo": 0,
+     "hi": 0.5,
+     "n": 259,
+     "frac": 0.07463976945244957,
+     "accuracy": 0.5057915057915058,
+     "share_of_errors": 0.1901931649331352
+    },
+    {
+     "lo": 0.5,
+     "hi": 1.0,
+     "n": 254,
+     "frac": 0.07319884726224783,
+     "accuracy": 0.594488188976378,
+     "share_of_errors": 0.15304606240713226
+    },
+    {
+     "lo": 1.0,
+     "hi": 2.0,
+     "n": 478,
+     "frac": 0.1377521613832853,
+     "accuracy": 0.6736401673640168,
+     "share_of_errors": 0.23179791976225855
+    },
+    {
+     "lo": 2.0,
+     "hi": 4.0,
+     "n": 984,
+     "frac": 0.28357348703170027,
+     "accuracy": 0.823170731707317,
+     "share_of_errors": 0.2585438335809807
+    },
+    {
+     "lo": 4.0,
+     "hi": null,
+     "n": 1495,
+     "frac": 0.430835734870317,
+     "accuracy": 0.9250836120401338,
+     "share_of_errors": 0.1664190193164933
+    }
+   ],
+   "icc_used": 0.9677,
+   "icc_source": "measured per case in this cohort; inter-operator ICC(1,1); CI from a case-level bootstrap, B = 2000, seed 42 (not back-derived)",
+   "icc_is_measured": true,
+   "icc_form": "ICC(1,1)",
+   "sd_measurement_error_source": "sigma_e measured per case",
+   "sd_cohort": 6.33411968832642,
+   "sd_measurement_error": 1.1267,
+   "mean_flip_prob": 0.06658185784271553,
+   "label_noise_accuracy_ceiling": 0.9334181421572845,
+   "observed_accuracy": 0.8060518731988473
+  }
+ },
+ "learning_curve_far": {
+  "sagittal": [
+   {
+    "frac": 0.1,
+    "arm": "learning_curve_10pct",
+    "n_far": 2124,
+    "acc_all": 0.7662824207492795,
+    "acc_far": 0.8545197740112994,
+    "bal_all": 0.7076542173082951,
+    "bal_far": 0.8197999315165859
+   },
+   {
+    "frac": 0.25,
+    "arm": "learning_curve_25pct",
+    "n_far": 2124,
+    "acc_all": 0.7881844380403458,
+    "acc_far": 0.8771186440677966,
+    "bal_all": 0.7528548126830609,
+    "bal_far": 0.8594686032160611
+   },
+   {
+    "frac": 0.5,
+    "arm": "learning_curve_50pct",
+    "n_far": 2124,
+    "acc_all": 0.792507204610951,
+    "acc_far": 0.8870056497175142,
+    "bal_all": 0.7679228983951681,
+    "bal_far": 0.8768866575814919
+   },
+   {
+    "frac": 0.75,
+    "arm": "learning_curve_75pct",
+    "n_far": 2124,
+    "acc_all": 0.7876080691642652,
+    "acc_far": 0.8757062146892656,
+    "bal_all": 0.7677701260145858,
+    "bal_far": 0.870888417680638
+   },
+   {
+    "frac": 1.0,
+    "arm": "c4b",
+    "n_far": 2124,
+    "acc_all": 0.7959654178674351,
+    "acc_far": 0.8860640301318268,
+    "bal_all": 0.7796309769400263,
+    "bal_far": 0.8832746440106963
+   }
+  ],
+  "vertical": [
+   {
+    "frac": 0.1,
+    "arm": "learning_curve_10pct",
+    "n_far": 2957,
+    "acc_all": 0.7590778097982709,
+    "acc_far": 0.7967534663510315,
+    "bal_all": 0.523881601143985,
+    "bal_far": 0.5499018870258069
+   },
+   {
+    "frac": 0.25,
+    "arm": "learning_curve_25pct",
+    "n_far": 2957,
+    "acc_all": 0.7873198847262248,
+    "acc_far": 0.8302333446060196,
+    "bal_all": 0.5870614157219028,
+    "bal_far": 0.6313654944463809
+   },
+   {
+    "frac": 0.5,
+    "arm": "learning_curve_50pct",
+    "n_far": 2957,
+    "acc_all": 0.7948126801152737,
+    "acc_far": 0.8407169428474806,
+    "bal_all": 0.6094542929534348,
+    "bal_far": 0.6588582519211227
+   },
+   {
+    "frac": 0.75,
+    "arm": "learning_curve_75pct",
+    "n_far": 2957,
+    "acc_all": 0.8060518731988473,
+    "acc_far": 0.8528914440311126,
+    "bal_all": 0.6493889928369422,
+    "bal_far": 0.7087330443384411
+   },
+   {
+    "frac": 1.0,
+    "arm": "c4b",
+    "n_far": 2957,
+    "acc_all": 0.8060518731988473,
+    "acc_far": 0.8505241799120731,
+    "bal_all": 0.6531453460610264,
+    "bal_far": 0.7089277029185573
+   }
+  ]
+ },
+ "last_segment_gain": {
+  "sagittal": {
+   "g_all": 0.011860850925440425,
+   "g_far": 0.01238622633005837,
+   "diff": 0.0005253754046179449,
+   "diff_ci95": [
+    -0.007251781110332136,
+    0.008454360237562894
+   ],
+   "n_boot": 2000,
+   "seed": 42,
+   "verdict": "not_distinguishable",
+   "_definition": "paired case-level bootstrap; the full set and the far-from-threshold subset share one set of resampling indices"
+  },
+  "vertical": {
+   "g_all": 0.0037563532240841857,
+   "g_far": 0.00019465858011624704,
+   "diff": -0.0035616946439679387,
+   "diff_ci95": [
+    -0.011498160541173596,
+    0.0046469411608586
+   ],
+   "n_boot": 2000,
+   "seed": 42,
+   "verdict": "not_distinguishable",
+   "_definition": "paired case-level bootstrap; the full set and the far-from-threshold subset share one set of resampling indices"
+  }
+ }
+}

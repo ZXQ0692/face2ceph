@@ -1,0 +1,56 @@
+cff-version: 1.2.0
+message: "Cite this software; cite the accompanying article when its final bibliographic record is available."
+title: "face2ceph"
+type: software
+version: 1.0.0
+license: MIT
+repository-code: "https://github.com/ZXQ0692/face2ceph"
+abstract: "Clean reimplementation of the final disclosed face2ceph study method, with a bounded numerical verification contract."
+authors:
+  - family-names: Zhang
+    given-names: Xiaoqi
+  - family-names: Xing
+    given-names: Lu
+  - family-names: Zhang
+    given-names: Xiaoqian
+  - family-names: Jian
+    given-names: Fan
+  - family-names: Wang
+    given-names: Yan
+  - family-names: Li
+    given-names: Xiaolong
+  - family-names: Li
+    given-names: Minqi
+  - family-names: Lai
+    given-names: Wenli
+    email: wenlilai@scu.edu.cn
+  - family-names: Long
+    given-names: Hu
+    email: hlong@scu.edu.cn
+# Journal, DOI, and publication date are intentionally omitted until assigned.
+preferred-citation:
+  type: unpublished
+  title: "Skeletal Information Recoverable from Facial Photographs by Deep Learning"
+  year: 2026
+  notes: "Manuscript submitted for publication; journal and DOI not yet assigned."
+  authors:
+    - family-names: Zhang
+      given-names: Xiaoqi
+    - family-names: Xing
+      given-names: Lu
+    - family-names: Zhang
+      given-names: Xiaoqian
+    - family-names: Jian
+      given-names: Fan
+    - family-names: Wang
+      given-names: Yan
+    - family-names: Li
+      given-names: Xiaolong
+    - family-names: Li
+      given-names: Minqi
+    - family-names: Lai
+      given-names: Wenli
+      email: wenlilai@scu.edu.cn
+    - family-names: Long
+      given-names: Hu
+      email: hlong@scu.edu.cn

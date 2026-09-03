@@ -1,0 +1,18 @@
+face_landmarker:
+  filename: face_landmarker.task
+  url: https://storage.googleapis.com/mediapipe-models/face_landmarker/face_landmarker/float16/1/face_landmarker.task
+  sha256: 64184e229b263107bc2b804c6625db1341ff2bb731874b0bcc2fe6544e0bc9ff
+profile_segmenter:
+  filename: selfie_multiclass_256x256.tflite
+  url: https://storage.googleapis.com/mediapipe-models/image_segmenter/selfie_multiclass_256x256/float32/1/selfie_multiclass_256x256.tflite
+  sha256: c6748b1253a99067ef71f7e26ca71096cd449baefa8f101900ea23016507e0e0
+image_backbone:
+  name: convnext_tiny.in12k_ft_in1k
+  filename: convnext_tiny.in12k_ft_in1k.safetensors
+  url: https://huggingface.co/timm/convnext_tiny.in12k_ft_in1k/resolve/aa096f03029c7f0ec052013f64c819b34f8ad790/model.safetensors
+  sha256: a1aefa409b513cf209b085424eb3efffe4e4a9f511491bc2c12ea35209e6bb95
+stronger_backbone:
+  name: convnext_tiny.fb_in22k_ft_in1k_384
+  filename: convnext_tiny.fb_in22k_ft_in1k_384.safetensors
+  url: https://huggingface.co/timm/convnext_tiny.fb_in22k_ft_in1k_384/resolve/32c741ba106f9e062174ef829354a16719c3dcac/model.safetensors
+  sha256: a5cbe10cfa2e90ec787a082253033ac0a61de0264b68210815a988e53a1a5d7c

@@ -1,0 +1,170 @@
+{
+ "config": "c4b",
+ "alpha": 0.1,
+ "nominal": 0.9,
+ "n_calib": 1388,
+ "n_test": 3470,
+ "_status": "descriptive analysis added post hoc; it uses the cached predictions only and runs no new inference",
+ "per_target": {
+  "ANB": {
+   "sigma_cv": 0.22214817410517204,
+   "coverage_adaptive": 0.8962536023054755,
+   "coverage_fixed": 0.8809798270893372,
+   "halfwidth_adaptive_mean": 2.261898838393829,
+   "halfwidth_fixed": 2.1501518290438986,
+   "interval_score_adaptive": 6.151444243409773,
+   "interval_score_fixed": 6.273891487945166,
+   "interval_score_ratio": 0.980483047121445,
+   "conditional_coverage_by_sigma_quintile": {
+    "Q1": 0.861671469740634,
+    "Q2": 0.8804034582132565,
+    "Q3": 0.9063400576368876,
+    "Q4": 0.9077809798270894,
+    "Q5": 0.9250720461095101
+   }
+  },
+  "Wits": {
+   "sigma_cv": 0.15463350179658147,
+   "coverage_adaptive": 0.8919308357348703,
+   "coverage_fixed": 0.8806916426512968,
+   "halfwidth_adaptive_mean": 3.8573426363953267,
+   "halfwidth_fixed": 3.8157638606229023,
+   "interval_score_adaptive": 10.468149138273068,
+   "interval_score_fixed": 10.464990205233924,
+   "interval_score_ratio": 1.0003018572380091,
+   "conditional_coverage_by_sigma_quintile": {
+    "Q1": 0.8631123919308358,
+    "Q2": 0.8832853025936599,
+    "Q3": 0.8674351585014409,
+    "Q4": 0.9077809798270894,
+    "Q5": 0.9380403458213257
+   }
+  },
+  "SN_MP": {
+   "sigma_cv": 0.170775836915717,
+   "coverage_adaptive": 0.8873198847262248,
+   "coverage_fixed": 0.8939481268011528,
+   "halfwidth_adaptive_mean": 5.250338663881291,
+   "halfwidth_fixed": 5.290549053572022,
+   "interval_score_adaptive": 13.922752816739228,
+   "interval_score_fixed": 13.785159690500066,
+   "interval_score_ratio": 1.009981250078226,
+   "conditional_coverage_by_sigma_quintile": {
+    "Q1": 0.8328530259365994,
+    "Q2": 0.8731988472622478,
+    "Q3": 0.8789625360230547,
+    "Q4": 0.9149855907780979,
+    "Q5": 0.9365994236311239
+   }
+  },
+  "FMA": {
+   "sigma_cv": 0.15902293004281978,
+   "coverage_adaptive": 0.8948126801152738,
+   "coverage_fixed": 0.9002881844380404,
+   "halfwidth_adaptive_mean": 4.5581232007970875,
+   "halfwidth_fixed": 4.520204493866174,
+   "interval_score_adaptive": 12.144554864965865,
+   "interval_score_fixed": 12.109254241132348,
+   "interval_score_ratio": 1.002915177361923,
+   "conditional_coverage_by_sigma_quintile": {
+    "Q1": 0.8530259365994236,
+    "Q2": 0.8904899135446686,
+    "Q3": 0.8890489913544669,
+    "Q4": 0.9106628242074928,
+    "Q5": 0.930835734870317
+   }
+  },
+  "PP_MP": {
+   "sigma_cv": 0.11775873865000591,
+   "coverage_adaptive": 0.9017291066282421,
+   "coverage_fixed": 0.9034582132564841,
+   "halfwidth_adaptive_mean": 4.81770804913946,
+   "halfwidth_fixed": 4.802949310607723,
+   "interval_score_adaptive": 12.553378793912369,
+   "interval_score_fixed": 12.521974658620337,
+   "interval_score_ratio": 1.0025079219650403,
+   "conditional_coverage_by_sigma_quintile": {
+    "Q1": 0.8573487031700289,
+    "Q2": 0.9034582132564841,
+    "Q3": 0.9020172910662824,
+    "Q4": 0.9221902017291066,
+    "Q5": 0.9236311239193083
+   }
+  },
+  "Jarabak": {
+   "sigma_cv": 0.1632386737683588,
+   "coverage_adaptive": 0.8945244956772335,
+   "coverage_fixed": 0.8930835734870317,
+   "halfwidth_adaptive_mean": 4.830779285364085,
+   "halfwidth_fixed": 4.688559339907641,
+   "interval_score_adaptive": 12.460411522515654,
+   "interval_score_fixed": 12.343512533839796,
+   "interval_score_ratio": 1.0094704800076462,
+   "conditional_coverage_by_sigma_quintile": {
+    "Q1": 0.8515850144092219,
+    "Q2": 0.8746397694524496,
+    "Q3": 0.8962536023054755,
+    "Q4": 0.9048991354466859,
+    "Q5": 0.9452449567723343
+   }
+  },
+  "Y_axis": {
+   "sigma_cv": 0.1642221594731162,
+   "coverage_adaptive": 0.9002881844380404,
+   "coverage_fixed": 0.9060518731988473,
+   "halfwidth_adaptive_mean": 3.3091325346823477,
+   "halfwidth_fixed": 3.3256384802614747,
+   "interval_score_adaptive": 8.478330671573257,
+   "interval_score_fixed": 8.38392171418794,
+   "interval_score_ratio": 1.0112607155223732,
+   "conditional_coverage_by_sigma_quintile": {
+    "Q1": 0.8631123919308358,
+    "Q2": 0.8731988472622478,
+    "Q3": 0.8948126801152738,
+    "Q4": 0.9221902017291066,
+    "Q5": 0.9481268011527377
+   }
+  },
+  "LAFH_TAFH": {
+   "sigma_cv": 0.16408460855670717,
+   "coverage_adaptive": 0.9106628242074928,
+   "coverage_fixed": 0.9060518731988473,
+   "halfwidth_adaptive_mean": 1.9298635072593053,
+   "halfwidth_fixed": 1.8587685125839144,
+   "interval_score_adaptive": 4.752491367033575,
+   "interval_score_fixed": 4.6702509329484085,
+   "interval_score_ratio": 1.0176094251178163,
+   "conditional_coverage_by_sigma_quintile": {
+    "Q1": 0.8674351585014409,
+    "Q2": 0.8933717579250721,
+    "Q3": 0.8948126801152738,
+    "Q4": 0.9365994236311239,
+    "Q5": 0.9610951008645533
+   }
+  }
+ },
+ "summary": {
+  "coverage_adaptive_range": [
+   0.8873198847262248,
+   0.9106628242074928
+  ],
+  "coverage_fixed_range": [
+   0.8806916426512968,
+   0.9060518731988473
+  ],
+  "interval_score_ratio_range": [
+   0.980483047121445,
+   1.0176094251178163
+  ],
+  "n_targets_adaptive_better": 1,
+  "conditional_coverage_Q1_range": [
+   0.8328530259365994,
+   0.8674351585014409
+  ],
+  "conditional_coverage_Q5_range": [
+   0.9236311239193083,
+   0.9610951008645533
+  ],
+  "_conclusion": "Marginal coverage is recovered mainly by the conformal calibration; the incremental value of the adaptive sigma is limited and target-dependent; conditional coverage is uneven, with the low-sigma group systematically under-covered and the high-sigma group conservative."
+ }
+}

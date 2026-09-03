@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Authorized preprocessing and training cohort",
+  "type": "object",
+  "required": ["input_required_columns", "preprocessed_columns"],
+  "properties": {
+    "input_required_columns": {
+      "const": [
+        "case_id",
+        "age",
+        "sex",
+        "ANB",
+        "Wits",
+        "SN_MP",
+        "FMA",
+        "PP_MP",
+        "Jarabak",
+        "Y_axis",
+        "LAFH_TAFH",
+        "frontal_path",
+        "profile_path"
+      ]
+    },
+    "preprocessed_columns": {
+      "const": [
+        "case_id",
+        "age",
+        "sex",
+        "ANB",
+        "Wits",
+        "SN_MP",
+        "FMA",
+        "PP_MP",
+        "Jarabak",
+        "Y_axis",
+        "LAFH_TAFH",
+        "sagittal",
+        "vertical",
+        "usable",
+        "analyzed",
+        "frontal_path",
+        "profile_path",
+        "profile_sdf_path"
+      ]
+    }
+  }
+}

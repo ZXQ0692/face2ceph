@@ -1,0 +1,49 @@
+{
+ "config": "c4b",
+ "design": {
+  "n_train_side": 13898,
+  "single_centre_cohort": true,
+  "domain_label": "acquisition_subset",
+  "single_centre_training": true
+ },
+ "P1_batch": {
+  "feature": {
+   "accuracy": 0.28586847028349405,
+   "balanced_accuracy": 0.18385962655933777,
+   "n_classes": 32,
+   "chance_balanced": 0.03125,
+   "majority": 0.22240610159735213
+  },
+  "shuffled": {
+   "accuracy": 0.13095409411426104,
+   "balanced_accuracy": 0.03248933232950378,
+   "n_classes": 32,
+   "chance_balanced": 0.03125,
+   "majority": 0.22240610159735213
+  },
+  "age_sex_only": {
+   "accuracy": 0.22240610159735213,
+   "balanced_accuracy": 0.03125,
+   "n_classes": 32,
+   "chance_balanced": 0.03125,
+   "majority": 0.22240610159735213
+  },
+  "excess_over_control": 0.151370294229834
+ },
+ "P2_domain": {
+  "applicable": false,
+  "reason": "a single-centre cohort, so there is only one site and no domain label to discriminate",
+  "n_domains": 1
+ },
+ "P3_geometry": {
+  "silhouette_sagittal": 0.10512660443782806,
+  "silhouette_vertical": 0.1170794665813446,
+  "n_umap": 4000
+ },
+ "P4_grl": {
+  "train_adv_initial_max": 0.0,
+  "train_adv_final": 0.0,
+  "reference_ce_uniform_4class": 1.3862943611198906,
+  "is_degenerate": true
+ }
+}

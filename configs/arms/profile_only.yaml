@@ -1,0 +1,7 @@
+name: profile_only
+model:
+  use_profile_sdf: true
+  metadata_conditioning: film
+  regression: heteroscedastic
+  input: profile
+

@@ -1,0 +1,54 @@
+seed: 42
+split:
+  test_ratio: 0.20
+  calibration_ratio: 0.10
+  folds: 5
+  strata: [sex, age_band, sagittal, vertical]
+  minimum_stratum_size: 20
+  degradation_order: [age_band, vertical, sex]
+preprocessing:
+  image_size: 384
+  jpeg_quality: 95
+  frontal:
+    interpupillary_ratio: 0.32
+    eye_center_y: 0.40
+  profile:
+    face_height_ratio: 0.72
+    face_center_x: 0.44
+  quality:
+    minimum_source_side: 400
+    maximum_roll_degrees: 12.0
+    minimum_detection_score: 0.30
+  segmentation:
+    minimum_foreground_fraction: 0.10
+    maximum_foreground_fraction: 0.85
+    maximum_face_components: 4
+model:
+  image_backbone: convnext_tiny.in12k_ft_in1k
+  use_profile_sdf: true
+  metadata_conditioning: film
+  regression: heteroscedastic
+  dropout: 0.2
+training:
+  batch_size: 16
+  gradient_accumulation: 4
+  workers: 8
+  channels_last: true
+  learning_rate: 0.0001
+  weight_decay: 0.05
+  warmup_epochs: 3
+  maximum_epochs: 30
+  early_stopping_patience: 10
+  gradient_clip_norm: 5.0
+  mixed_precision: true
+  focal_gamma: 2.0
+augmentation:
+  rotation_degrees: 5.0
+  translation_fraction: 0.10
+  brightness_fraction: 0.15
+  contrast_fraction: 0.15
+  clahe_probability: 0.20
+conformal:
+  alpha: 0.10
+referral:
+  rates: [0.05, 0.10, 0.15, 0.20, 0.25, 0.30, 0.40]

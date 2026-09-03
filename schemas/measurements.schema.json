@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Controlled measurement table",
+  "type": "object",
+  "required": ["columns"],
+  "properties": {
+    "columns": {
+      "const": [
+        "case_id",
+        "age",
+        "sex",
+        "split",
+        "fold",
+        "age_stratum",
+        "norm_extrapolated",
+        "sagittal",
+        "vertical",
+        "analyzed",
+        "tracer_1",
+        "tracer_2",
+        "tracer_3",
+        "ANB",
+        "Wits",
+        "SN_MP",
+        "FMA",
+        "PP_MP",
+        "Jarabak",
+        "Y_axis",
+        "LAFH_TAFH",
+        "ANB_t2",
+        "Wits_t2",
+        "SN_MP_t2",
+        "FMA_t2",
+        "PP_MP_t2",
+        "Jarabak_t2",
+        "Y_axis_t2",
+        "LAFH_TAFH_t2",
+        "ANB_t3",
+        "Wits_t3",
+        "SN_MP_t3",
+        "FMA_t3",
+        "PP_MP_t3",
+        "Jarabak_t3",
+        "Y_axis_t3",
+        "LAFH_TAFH_t3"
+      ]
+    }
+  }
+}
+

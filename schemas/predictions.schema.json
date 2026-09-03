@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Controlled prediction archive",
+  "type": "object",
+  "required": [
+    "case_id",
+    "prob_sag",
+    "prob_vert"
+  ],
+  "properties": {
+    "case_id": {"description": "One-dimensional opaque case codes"},
+    "mu": {"description": "Optional N by 8 predicted means"},
+    "sigma": {"description": "Optional N by 8 predictive standard deviations"},
+    "var_alea": {"description": "Optional N by 8 aleatoric variances"},
+    "var_epi": {"description": "Optional N by 8 epistemic variances"},
+    "features": {"description": "Optional N by D frozen ensemble features; controlled and not for public release"},
+    "y_raw": {"description": "Optional N by 8 reference measurements"},
+    "prob_sag": {"description": "N by 3 sagittal probabilities"},
+    "prob_vert": {"description": "N by 3 vertical probabilities"}
+  }
+}

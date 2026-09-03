@@ -1,0 +1,85 @@
+# Classification thresholds for sagittal and vertical skeletal pattern.
+#
+# Norms: Wu YG, Liu JQ, Zhang ZZ, Zhou XM, Wang J. Study on normal values of 127
+#        cephalometric measurements in the permanent dentition [in Chinese].
+#        Kou Qiang Yi Xue. 2021;41(9):797-804. doi:10.13591/j.cnki.kqyx.2021.09.006
+#        168 individuals with individual normal occlusion, aged 11-30 y.
+#
+# Rule: the normal band is the norm mean +/- k SD, rounded to 0.5 degrees.
+#
+# Pooling: the source reports no sex difference in ANB in either age group, and none in
+#          SN-MP among adults, so ANB uses a single band for both sexes and all ages and
+#          the adult SN-MP band pools the sexes.
+#
+# Semantics: lower and upper are the closed endpoints of the NORMAL band.
+#   sagittal   x < lower -> Class III ; lower <= x <= upper -> Class I ; x > upper -> Class II
+#   vertical   x < lower -> hypodivergent ; within -> normodivergent ; x > upper -> hyperdivergent
+#
+# The primary scheme was fixed before any model was trained. The three alternatives are
+# the pre-listed sensitivity analyses.
+
+primary: wu2021_1.5sd
+
+schemes:
+
+  wu2021_1.5sd:                       # primary analysis
+    label: "Wu 2021 norms, +/-1.5 SD"
+    sagittal:
+      metric: ANB
+      strata: []                      # not stratified
+      bands:
+        all: {lower: 0.5, upper: 5.0}
+    vertical:
+      metric: SN_MP
+      strata: [adult, sex]
+      bands:
+        adult:      {lower: 24.0, upper: 38.0}
+        minor_M:    {lower: 25.5, upper: 38.0}
+        minor_F:    {lower: 28.5, upper: 41.0}
+
+  wu2021_1.0sd:
+    label: "Wu 2021 norms, +/-1.0 SD (sensitivity)"
+    sagittal:
+      metric: ANB
+      strata: []
+      bands:
+        all: {lower: 1.0, upper: 4.5}
+    vertical:
+      metric: SN_MP
+      strata: [adult, sex]
+      bands:
+        adult:      {lower: 26.5, upper: 36.0}
+        minor_M:    {lower: 27.5, upper: 36.0}
+        minor_F:    {lower: 30.5, upper: 39.0}
+
+  wu2021_2.0sd:
+    label: "Wu 2021 norms, +/-2.0 SD (sensitivity)"
+    sagittal:
+      metric: ANB
+      strata: []
+      bands:
+        all: {lower: -0.5, upper: 6.0}
+    vertical:
+      metric: SN_MP
+      strata: [adult, sex]
+      bands:
+        adult:      {lower: 22.0, upper: 40.5}
+        minor_M:    {lower: 23.5, upper: 40.0}
+        minor_F:    {lower: 26.0, upper: 43.5}
+
+  abo:
+    # A MODIFIED, ROUNDED band adapted from the zero-score cephalometric ranges of the ABO
+    # Discrepancy Index (ANB -1.5 to 5.5; SN-GoGn 27 to 37). It is NOT the published index:
+    # every bound is moved outward and rounded, and the vertical band is applied to SN-MP,
+    # which is referenced to Go-Me rather than to the Go-Gn plane used by the index.
+    label: "Modified ABO-like band (sensitivity)"
+    sagittal:
+      metric: ANB
+      strata: []
+      bands:
+        all: {lower: -2.0, upper: 6.0}
+    vertical:
+      metric: SN_MP
+      strata: []
+      bands:
+        all: {lower: 26.0, upper: 38.0}
